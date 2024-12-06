@@ -1,0 +1,4 @@
+package com.example.onlinejobs.Dtos;
+
+public class EditServiceDto {
+}

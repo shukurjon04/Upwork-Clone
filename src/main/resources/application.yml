@@ -1,0 +1,48 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/online_job
+    password: root
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    generate-ddl: true
+    database: postgresql
+    defer-datasource-initialization: true
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: javadev465@gmail.com
+    password: mgxq gefi hgeb pdqj
+#    javadev: shukurjonboqiyev99@gmail.com
+#    passwordjavadev: rlfo tdbc yqip tzex
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls: true
+
+  sql:
+    init:
+      mode: always
+
+  security:
+    jwt:
+      token:
+        Secret: kjfsefhsf524585dnfsiefhgeskwfhiewfekjf65848513512354ejfbhewfygewfebsjhfsigtfuyewyu
+        Validity: 3600000
+
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 1009898680104-vb011bvi9ru95ccgp42rtdprkjvaf30i.apps.googleusercontent.com
+            client-secret: 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
+            scope:
+              - email
+              - profile
+
+  upload:
+    directory: D:\backendUchunStorage
